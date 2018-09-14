@@ -1,0 +1,21 @@
+//  模块分析图插件
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const merge = require('webpack-merge');
+const baseConfig = require('./webpack.base.conf');
+const webpack = require('webpack');
+
+const prodConfig = merge(baseConfig, {
+  output: {
+    filename: '[name].[contenthash:8].js'
+  },
+  mode: 'production',
+  plugins: [
+      new webpack.HashedModuleIdsPlugin(),
+      new BundleAnalyzerPlugin()
+  ]
+});
+
+prodConfig.plugins.unshift(new CleanWebpackPlugin(['dist']));
+
+module.exports = prodConfig;

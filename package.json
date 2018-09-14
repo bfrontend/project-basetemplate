@@ -1,10 +1,12 @@
 {
   "name": "project-basetemplate",
   "version": "0.0.1",
-  "description": "project-createBasic template for major frame projects",
+  "description": "project-creater Basic template for major frame projects",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --config build/webpack.dev.conf.js --hot",
+    "build": "webpack --config build/webpack.prod.conf.js --progress"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,24 @@
     "project-creater"
   ],
   "author": "webxmsj",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "happypack": "^5.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.14.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.4"
+  }
 }
