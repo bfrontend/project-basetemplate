@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "''"
+    "url": "https://github.com/webxmsj/project-basetemplate.git"
   },
   "keywords": [
     "template",
     "project-creater"
   ],
-  "author": "webxmsj",
+  "author": "https://github.com/webxmsj",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
