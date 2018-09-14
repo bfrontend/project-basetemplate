@@ -10,9 +10,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@containers': path.resolve(__dirname, 'src/containers/'),
-      '@components': path.resolve(__dirname, 'src/components/'),
-      '@utils': path.resolve(__dirname, 'src/utils/')
+      // '@containers': path.resolve(__dirname, 'src/containers/'),
+      // '@components': path.resolve(__dirname, 'src/components/'),
+      // '@utils': path.resolve(__dirname, 'src/utils/')
     }
   },
   module: {

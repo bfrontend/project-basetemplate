@@ -1,1 +1,2 @@
-console.log('main.js')
+console.log('welcome to use project-creater')
+
